@@ -38,7 +38,6 @@ const Banner = () => {
                         src={banner3}
                         alt="Third slide"
                     />
-
                     <Carousel.Caption>
                         <h3></h3>
                         <p></p>
@@ -50,10 +49,9 @@ const Banner = () => {
                         src={banner4}
                         alt="Third slide"
                     />
-
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3></h3>
+                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
