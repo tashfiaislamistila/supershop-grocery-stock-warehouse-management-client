@@ -32,6 +32,13 @@ const Blog = () => {
                 <h5> NoSQL databases<p> NoSQL databases are non-relational. NoSQL databases have dynamic schemas for
                     unstructured data.NoSQL databases are horizontally scalable.NoSQL databases are document, key-value, graph, or wide-column stores.NoSQL is better for unstructured data like documents or JSON</p></h5>
             </div>
+            <div className='mt-4'>
+                <h4 className='text-primary'>Question: 4 What is the purpose of jwt and how does it work?</h4>
+                <h5>Answer: JWT<p>JWT, is an open standard used to share security information between two parties - a client and a server.
+                    Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure
+                    that the claims cannot be altered after the token is issued.</p></h5>
+
+            </div>
         </div>
     );
 };
