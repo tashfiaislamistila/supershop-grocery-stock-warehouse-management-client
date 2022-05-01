@@ -1,27 +1,56 @@
 [
     {
         "id": "626dc225272decd2bd32aeb2",
+        "product-name": "Organic Vegetables",
+        "quantity": "1 kg",
         "price": 61,
-        "name": "Austin Randolph"
+        "supplier-name": "Austin Randolph",
+        "description": "Organic food, ecological food or biological food are food and drinks produced by methods complying with the standards of organic farming.",
+        "image": "https://i.ibb.co/4JzGSV0/vegetable.png"
     },
     {
         "id": "626dc2259a5c5737ef0f0536",
+        "product-name": "Organic Fruits",
+        "quantity": "5 kg",
         "price": 475,
-        "name": "James Larson"
+        "supplier-name": "James Larson",
+        "description": "Produce can be called organic if it's certified to have grown on soil that had no prohibited substances applied for three years prior to harvest. Prohibited substances include most synthetic fertilizers and pesticides.",
+        "image": "https://i.ibb.co/x5p9phC/fruits.png"
     },
     {
         "id": "626dc225df8a4defc0d5f8b8",
+        "product-name": "Organic Farm fresh milk",
+        "quantity": "5 liter",
         "price": 321,
-        "name": "Rosemarie Trevino"
+        "supplier-name": "Rosemarie Trevino",
+        "description": "Both conventional and organic dairy farmers have environmentally friendly practices. Organic dairy producers feed their animals with crops grown without the use of synthetic pesticides.",
+        "image": "https://i.ibb.co/wJY4t5j/farm-fresh-milk.png"
     },
     {
         "id": "626dc225fc2ca40006fc75b3",
+        "product-name": "Organic cookies",
+        "quantity": "10 kg",
         "price": 525,
-        "name": "Juana Mcneil"
+        "supplier-name": "Juana Mcneil",
+        "description": "Chocolate chunk cookie dough is made of certified organic ingredients grown without persistent pesticides.Baking mix contains no artificial flavors or preservatives.",
+        "image": "https://i.ibb.co/CKwWCZj/cookies.png"
     },
     {
         "id": "626dc2258ad6edba2958eac1",
+        "product-name": "Organic cheese",
+        "quantity": "5 kg",
         "price": 483,
-        "name": "Bertie Meyers"
+        "supplier-name": "Bertie Meyers",
+        "description": "Organic cheese contains all the goodness from regular cheese, including the high levels of protein and calcium.",
+        "image": "https://i.ibb.co/bQJYFGx/cheese.png"
+    },
+    {
+        "id": "626dc2258ad6edba2958eac1",
+        "product-name": "Organic berries",
+        "quantity": "10 kg",
+        "price": 483,
+        "supplier-name": "Bertie Meyers",
+        "description": "Organic berries are grown following a process that goes far beyond simply managing the use of pesticides!",
+        "image": "https://i.ibb.co/Pwtdk3g/barries.png"
     }
 ]
