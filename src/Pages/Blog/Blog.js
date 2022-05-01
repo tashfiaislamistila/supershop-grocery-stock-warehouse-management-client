@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../Shared/PageTitle/PageTitle';
+
 
 const Blog = () => {
     return (
         <div>
+            <PageTitle title="Blog"></PageTitle>
             <div className='mt-4 text-center '>
                 <h1>This is Question Answer Section</h1>
             </div>
