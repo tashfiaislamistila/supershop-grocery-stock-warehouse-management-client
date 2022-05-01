@@ -4,17 +4,20 @@ import Blog from './Pages/Blog/Blog';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
     <div className="container">
       <Header></Header>
       <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
-      </Routes>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+      </Routes >
       <Footer></Footer>
-    </div>
+    </div >
   );
 }
 
