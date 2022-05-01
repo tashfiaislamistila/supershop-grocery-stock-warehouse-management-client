@@ -52,5 +52,109 @@
         "supplier-name": "Bertie Meyers",
         "description": "Organic berries are grown following a process that goes far beyond simply managing the use of pesticides!",
         "image": "https://i.ibb.co/Pwtdk3g/barries.png"
+    },
+    {
+        "id": "626edc2a7b788bf3107f6b2e",
+        "product-name": "Animal food",
+        "price": 203,
+        "name": "Franklin Banks",
+        "image": "https://i.ibb.co/F3vwFSf/animal-food.png"
+    },
+    {
+        "id": "626edc2af67ce0634ba5ac5b",
+        "product-name": "Bakery Items",
+        "price": 363,
+        "name": "Alicia Russo",
+        "image": "https://i.ibb.co/SxG67F8/bakery-item.png"
+    },
+    {
+        "id": "626edc2a91c02ef8468c7282",
+        "product-name": "Beef Items",
+        "price": 599,
+        "name": "Rice Bender",
+        "image": "https://i.ibb.co/wWKgqmX/beef.png"
+    },
+    {
+        "id": "626edc2a151fd4d547790781",
+        "product-name": "Bread Items",
+        "price": 478,
+        "name": "Geraldine Williams",
+        "image": "https://i.ibb.co/nk9XSRG/bread.png"
+    },
+    {
+        "id": "626edc2ac4b4c2398e9eb96c",
+        "product-name": "Can Drinks Items",
+        "price": 116,
+        "name": "Terra Levine",
+        "image": "https://i.ibb.co/9gRj6vQ/can-drinks.png"
+    },
+    {
+        "id": "626edc2ac5518b73749624fa",
+        "product-name": "Chicken Items",
+        "name": "Barrera Tate",
+        "image": "https://i.ibb.co/cL2zTvv/chicken.png"
+    },
+    {
+        "id": "626edc2a9908cf00d33c53fa",
+        "product-name": "Chips & Snacks Items",
+        "price": 202,
+        "name": "Henson Mcmillan",
+        "image": "https://i.ibb.co/tPRbZTD/chips-and-snacks.png"
+    },
+    {
+        "id": "626edc2a7b788bf3107f6b2e",
+        "product-name": "Coffee Items",
+        "price": 203,
+        "name": "Franklin Banks",
+        "image": "https://i.ibb.co/xL51Jzm/coffee.png"
+    },
+    {
+        "id": "626edc2af67ce0634ba5ac5b",
+        "product-name": "Cornflakes Items",
+        "price": 363,
+        "name": "Alicia Russo",
+        "image": "https://i.ibb.co/GVtFrtm/cornflex.png"
+    },
+    {
+        "id": "626edc2a91c02ef8468c7282",
+        "product-name": "Eggs",
+        "price": 599,
+        "name": "Rice Bender",
+        "image": "https://i.ibb.co/SvNy034/eggs.png"
+    },
+    {
+        "id": "626edc2a151fd4d547790781",
+        "product-name": "Fish Items",
+        "price": 478,
+        "name": "Geraldine Williams",
+        "image": "https://i.ibb.co/JnQm7x0/fish.png"
+    },
+    {
+        "id": "626edc2ac4b4c2398e9eb96c",
+        "product-name": "Jar Food Items",
+        "price": 116,
+        "name": "Terra Levine",
+        "image": "https://i.ibb.co/86f3TXM/foodinjar.png"
+    },
+    {
+        "id": "626edc2ac5518b73749624fa",
+        "product-name": "Juice Items",
+        "price": 303,
+        "name": "Barrera Tate",
+        "image": "https://i.ibb.co/26JD39z/juice.png"
+    },
+    {
+        "id": "626edc2a9908cf00d33c53fa",
+        "product-name": "Natural Food Items",
+        "price": 202,
+        "name": "Henson Mcmillan",
+        "image": "https://i.ibb.co/fX0fKGs/natural-food.png"
+    },
+    {
+        "id": "626edc2a9908cf00d33c53fa",
+        "product-name": "Variety of Tea",
+        "price": 202,
+        "name": "Henson Mcmillan",
+        "image": "https://i.ibb.co/s1BY0GP/varity-of-tea.png"
     }
 ]
