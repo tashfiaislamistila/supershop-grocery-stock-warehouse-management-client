@@ -5,7 +5,7 @@
         "quantity": 1,
         "price": 61,
         "supplier": "Austin Randolph",
-        "description": "Organic food, ecological food or biological food are food and drinks produced by methods complying with the standards of organic farming.",
+        "description": "We produce fresh organic vegetable which is pesticides free, we grow it in our farm.",
         "image": "https://i.ibb.co/4JzGSV0/vegetable.png"
     },
     {
@@ -14,7 +14,7 @@
         "quantity": 1,
         "price": 475,
         "supplier": "James Larson",
-        "description": "We have organic fruit collection which is prohibited substances include most synthetic fertilizers and pesticides.",
+        "description": "We have organic fruit collection which is prohibited substances and pesticides free.",
         "image": "https://i.ibb.co/x5p9phC/fruits.png"
     },
     {
@@ -23,7 +23,7 @@
         "quantity": 1,
         "price": 321,
         "supplier": "Rosemarie Trevino",
-        "description": "We have organic dairy farmers have environmentally friendly practices. Organic dairy producers feed their animals with crops grown without the use of synthetic pesticides.",
+        "description": "We have organic dairy farmers have environmentally friendly practices.",
         "image": "https://i.ibb.co/wJY4t5j/farm-fresh-milk.png"
     },
     {
@@ -32,7 +32,7 @@
         "quantity": 1,
         "price": 525,
         "supplier": "Juana Mcneil",
-        "description": "Chocolate chunk cookie dough is made of certified organic ingredients grown without persistent pesticides.Baking mix contains no artificial flavors or preservatives.",
+        "description": "Our cookie dough is free from artificial flavors and chocolate chips are made from organic cacao and organic sugar.",
         "image": "https://i.ibb.co/CKwWCZj/cookies.png"
     },
     {
@@ -59,7 +59,7 @@
         "quantity": 1,
         "price": 203,
         "supplier": "Franklin Banks",
-        "description": "Browse our website for a wide collection of popular brand name animal Food, with nutritional factors and flavours for all dogs, at everyday great prices!",
+        "description": "We have wide collection of popular brand name animal Food, with nutritional factors and flavours for all dogs.",
         "image": "https://i.ibb.co/F3vwFSf/animal-food.png"
     },
     {
@@ -77,7 +77,7 @@
         "quantity": 1,
         "price": 599,
         "supplier": "Rice Bender",
-        "description": "We have fresh frozen beef pieces which is collected from our own farm ",
+        "description": "We have fresh frozen beef pieces which is collected from our own farm. ",
         "image": "https://i.ibb.co/wWKgqmX/beef.png"
     },
     {
@@ -86,7 +86,7 @@
         "quantity": 1,
         "price": 478,
         "supplier": "Geraldine Williams",
-        "description": "Our bread item is super soft and fresh",
+        "description": "Our bread item is super soft and fresh, which is come from direct factory.",
         "image": "https://i.ibb.co/nk9XSRG/bread.png"
     },
     {
@@ -95,7 +95,7 @@
         "quantity": 1,
         "price": 116,
         "supplier": "Terra Levine",
-        "description": "We have very good quantity of can drinks and energy drinks",
+        "description": "We have very good quantity of can drinks and energy drinks.We have bulk collection of drinks.",
         "image": "https://i.ibb.co/9gRj6vQ/can-drinks.png"
     },
     {
@@ -104,7 +104,7 @@
         "quantity": 1,
         "price": 116,
         "supplier": "Barrera Tate",
-        "description": "We have fresh frozen chicken pieces which is collected from our own farm ",
+        "description": "We have fresh frozen chicken pieces which is collected from our own farm. ",
         "image": "https://i.ibb.co/cL2zTvv/chicken.png"
     },
     {
@@ -113,7 +113,7 @@
         "quantity": 1,
         "price": 202,
         "supplier": "Henson Mcmillan",
-        "description": "We have good quantity of snacks item which is collected from their factory",
+        "description": "We have good quantity of snacks item.",
         "image": "https://i.ibb.co/tPRbZTD/chips-and-snacks.png"
     },
     {
@@ -122,7 +122,7 @@
         "quantity": 1,
         "price": 203,
         "supplier": "Franklin Banks",
-        "description": "We have Nescafe,Tim Hortons ,Starbucks coffee bean ",
+        "description": "We have different brand coffee bean. ",
         "image": "https://i.ibb.co/xL51Jzm/coffee.png"
     },
     {
@@ -131,7 +131,7 @@
         "quantity": 1,
         "price": 363,
         "supplier": "Alicia Russo",
-        "description": "We have cornflakes collection ",
+        "description": "We have cornflakes collection.",
         "image": "https://i.ibb.co/GVtFrtm/cornflex.png"
     },
     {
@@ -140,7 +140,7 @@
         "quantity": 1,
         "price": 599,
         "supplier": "Rice Bender",
-        "description": "We have farm fresh organic eggs",
+        "description": "We have farm fresh organic eggs.",
         "image": "https://i.ibb.co/SvNy034/eggs.png"
     },
     {
@@ -149,7 +149,7 @@
         "quantity": 1,
         "price": 478,
         "supplier": "Geraldine Williams",
-        "description": "We have fresh frozen fish",
+        "description": "We have fresh frozen fish.",
         "image": "https://i.ibb.co/JnQm7x0/fish.png"
     },
     {
@@ -158,7 +158,7 @@
         "quantity": 1,
         "price": 116,
         "supplier": "Terra Levine",
-        "description": "We have so many collection of jar food",
+        "description": "We have so many collection of jar food.",
         "image": "https://i.ibb.co/86f3TXM/foodinjar.png"
     },
     {
@@ -167,7 +167,7 @@
         "quantity": 1,
         "price": 303,
         "supplier": "Barrera Tate",
-        "description": "We have fresh juice items",
+        "description": "We have fresh juice items.",
         "image": "https://i.ibb.co/26JD39z/juice.png"
     },
     {
@@ -176,7 +176,7 @@
         "quantity": 1,
         "price": 202,
         "supplier": "Henson Mcmillan",
-        "description": "We have nuts collection and so many natural food collections ",
+        "description": "We have nuts and natural food collections. ",
         "image": "https://i.ibb.co/fX0fKGs/natural-food.png"
     },
     {
@@ -185,7 +185,7 @@
         "quantity": 1,
         "price": 202,
         "supplier": "Henson Mcmillan",
-        "description": "We have so many tea collections ",
+        "description": "We have so many tea collections.",
         "image": "https://i.ibb.co/s1BY0GP/varity-of-tea.png"
     }
 ]
