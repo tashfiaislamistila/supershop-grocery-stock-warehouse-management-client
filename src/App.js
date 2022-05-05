@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './Pages/Blog/Blog';
+import Banner from './Pages/Home/Banner/Banner';
 import Home from './Pages/Home/Home/Home';
 import Inventories from './Pages/Home/Inventories/Inventories';
 import Inventory from './Pages/Inventory/Inventory';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="container">
       <Header></Header>
+      {/* <Banner></Banner> */}
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>

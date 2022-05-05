@@ -4,7 +4,7 @@ import logo from '../../../image/logo.png'
 const Header = () => {
     return (
         <header>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" >
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top' >
                 <Container>
                     <img className='px-3' height={30} src={logo} alt="" />
                     <Navbar.Brand href="home" className='fw-bold text-warning'>Supershop Grocery Stock
@@ -14,7 +14,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/inventories">Inventories</Nav.Link>
+                            <Nav.Link href="/inventories">All Inventories</Nav.Link>
                             <Nav.Link href="#pricing">Manage Inventories</Nav.Link>
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>

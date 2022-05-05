@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import { MDBBtn } from 'mdb-react-ui-kit';
 const Inventory = ({ inventory }) => {
 
     const { product, image, supplier, quantity, price, description } = inventory;
@@ -21,7 +20,9 @@ const Inventory = ({ inventory }) => {
                     <p className="card-text mb-2">Supplier name: {supplier}</p>
                     <h5 className="card-text">Quantity: {quantity}</h5>
                     <div className='mb-2 p-2'>
-                        <button className='btn btn-outline-primary rounded-box px-3 py-2'>Manage Stock</button>
+                        <MDBBtn rounded className='mx-2' color='secondary'>
+                            Manage Stock
+                        </MDBBtn>
                     </div>
 
                 </div>

@@ -21,6 +21,9 @@ const Home = () => {
                 <div>
                     <h1 className='mt-5 text-center '>Warehouse Inventories</h1>
                 </div>
+                <div className='text-center mt-4'>
+                    <button className='btn btn-outline-primary btn-lg rounded-box py-2 px-4  fw-bold' onClick={showAllInventories}>See All Inventory Item </button>
+                </div >
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center mt-4'>
                     {
                         inventories.slice(0, 6).map(inventory => <Inventory
@@ -29,9 +32,7 @@ const Home = () => {
                         </Inventory>)
                     }
                 </div>
-                <div className='text-center mt-4'>
-                    <button className='btn btn-outline-primary btn-lg rounded-box py-2 px-4  fw-bold' onClick={showAllInventories}>See All Inventory Item </button>
-                </div >
+
             </div>
             <TermsAndConditions></TermsAndConditions>
         </>
