@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import useInventories from '../../CustomHooks/useInventories';
 import Inventory from '../../Inventory/Inventory';
 import './Inventories.css';
 
 const Inventories = () => {
-    const [inventories, setInventories] = useState([]);
+    const [inventories] = useInventories([]);
 
-    useEffect(() => {
-        fetch('inventory.json')
-            .then(res => res.json())
-            .then(data => setInventories(data));
-    }, [])
     return (
         <div >
-            <h1 className='mt-4 text-center'>Warehouse Inventories</h1>
             <div className='row row-cols-1  row-cols-md-2 row-cols-lg-3 g-4 text-center'>
                 {
                     inventories.map(inventory => <Inventory
@@ -21,7 +17,8 @@ const Inventories = () => {
                     </Inventory>)
                 }
             </div>
-        </div>
+
+        </div >
     );
 };
 
