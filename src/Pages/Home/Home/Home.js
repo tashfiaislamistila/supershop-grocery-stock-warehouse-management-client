@@ -30,7 +30,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='text-center mt-4'>
-                    <button className='bg-warning py-2 px-4 rounded-pill fw-bold' onClick={showAllInventories}>See all Inventory Item </button>
+                    <button className='btn btn-outline-primary rounded-box py-2 px-4  fw-bold' onClick={showAllInventories}>See All Inventory Item </button>
                 </div >
             </div>
             <TermsAndConditions></TermsAndConditions>
