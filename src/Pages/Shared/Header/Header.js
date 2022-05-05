@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-
+import logo from '../../../image/logo.png'
 const Header = () => {
     return (
         <header>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" >
                 <Container>
+                    <img className='px-3' height={30} src={logo} alt="" />
                     <Navbar.Brand href="home" className='fw-bold text-warning'>Supershop Grocery Stock
+
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
