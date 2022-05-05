@@ -1,6 +1,6 @@
 [
     {
-        "id": "626dc225272decd2bd32aeb2",
+        "id": 1,
         "product": "Organic Vegetables",
         "quantity": 1,
         "price": 61,
@@ -9,7 +9,7 @@
         "image": "https://i.ibb.co/4JzGSV0/vegetable.png"
     },
     {
-        "id": "626dc2259a5c5737ef0f0536",
+        "id": 2,
         "product": "Organic Fruits",
         "quantity": 1,
         "price": 475,
@@ -18,7 +18,7 @@
         "image": "https://i.ibb.co/x5p9phC/fruits.png"
     },
     {
-        "id": "626dc225df8a4defc0d5f8b8",
+        "id": 3,
         "product": "Organic Farm fresh milk",
         "quantity": 1,
         "price": 321,
@@ -27,7 +27,7 @@
         "image": "https://i.ibb.co/wJY4t5j/farm-fresh-milk.png"
     },
     {
-        "id": "626dc225fc2ca40006fc75b3",
+        "id": 4,
         "product": "Cookies",
         "quantity": 1,
         "price": 525,
@@ -36,7 +36,7 @@
         "image": "https://i.ibb.co/CKwWCZj/cookies.png"
     },
     {
-        "id": "626dc2258ad6edba2958eac1",
+        "id": 5,
         "product": "Organic cheese",
         "quantity": 1,
         "price": 483,
@@ -45,7 +45,7 @@
         "image": "https://i.ibb.co/bQJYFGx/cheese.png"
     },
     {
-        "id": "626dc2258ad6edba2958eac1",
+        "id": 6,
         "product": "Organic berries",
         "quantity": 1,
         "price": 483,
@@ -54,7 +54,7 @@
         "image": "https://i.ibb.co/Pwtdk3g/barries.png"
     },
     {
-        "id": "626edc2a7b788bf3107f6b2e",
+        "id": 7,
         "product": "Animal food",
         "quantity": 1,
         "price": 203,
@@ -63,7 +63,7 @@
         "image": "https://i.ibb.co/F3vwFSf/animal-food.png"
     },
     {
-        "id": "626edc2af67ce0634ba5ac5b",
+        "id": 8,
         "product": "Bakery Items",
         "quantity": 1,
         "price": 363,
@@ -72,7 +72,7 @@
         "image": "https://i.ibb.co/SxG67F8/bakery-item.png"
     },
     {
-        "id": "626edc2a91c02ef8468c7282",
+        "id": 9,
         "product": "Beef Items",
         "quantity": 1,
         "price": 599,
@@ -81,7 +81,7 @@
         "image": "https://i.ibb.co/wWKgqmX/beef.png"
     },
     {
-        "id": "626edc2a151fd4d547790781",
+        "id": 10,
         "product": "Bread Items",
         "quantity": 1,
         "price": 478,
@@ -90,7 +90,7 @@
         "image": "https://i.ibb.co/nk9XSRG/bread.png"
     },
     {
-        "id": "626edc2ac4b4c2398e9eb96c",
+        "id": 11,
         "product": "Can Drinks Items",
         "quantity": 1,
         "price": 116,
@@ -99,7 +99,7 @@
         "image": "https://i.ibb.co/9gRj6vQ/can-drinks.png"
     },
     {
-        "id": "626edc2ac5518b73749624fa",
+        "id": 12,
         "product": "Chicken Items",
         "quantity": 1,
         "price": 116,
@@ -108,7 +108,7 @@
         "image": "https://i.ibb.co/cL2zTvv/chicken.png"
     },
     {
-        "id": "626edc2a9908cf00d33c53fa",
+        "id": 13,
         "product": "Chips & Snacks Items",
         "quantity": 1,
         "price": 202,
@@ -117,7 +117,7 @@
         "image": "https://i.ibb.co/tPRbZTD/chips-and-snacks.png"
     },
     {
-        "id": "626edc2a7b788bf3107f6b2e",
+        "id": 14,
         "product": "Coffee Items",
         "quantity": 1,
         "price": 203,
@@ -126,7 +126,7 @@
         "image": "https://i.ibb.co/xL51Jzm/coffee.png"
     },
     {
-        "id": "626edc2af67ce0634ba5ac5b",
+        "id": 15,
         "product": "Cornflakes Items",
         "quantity": 1,
         "price": 363,
@@ -135,7 +135,7 @@
         "image": "https://i.ibb.co/GVtFrtm/cornflex.png"
     },
     {
-        "id": "626edc2a91c02ef8468c7282",
+        "id": 16,
         "product": "Eggs",
         "quantity": 1,
         "price": 599,
@@ -144,7 +144,7 @@
         "image": "https://i.ibb.co/SvNy034/eggs.png"
     },
     {
-        "id": "626edc2a151fd4d547790781",
+        "id": 17,
         "product": "Fish Items",
         "quantity": 1,
         "price": 478,
@@ -153,7 +153,7 @@
         "image": "https://i.ibb.co/JnQm7x0/fish.png"
     },
     {
-        "id": "626edc2ac4b4c2398e9eb96c",
+        "id": 18,
         "product": "Jar Food Items",
         "quantity": 1,
         "price": 116,
@@ -162,7 +162,7 @@
         "image": "https://i.ibb.co/86f3TXM/foodinjar.png"
     },
     {
-        "id": "626edc2ac5518b73749624fa",
+        "id": 19,
         "product": "Juice Items",
         "quantity": 1,
         "price": 303,
@@ -171,7 +171,7 @@
         "image": "https://i.ibb.co/26JD39z/juice.png"
     },
     {
-        "id": "626edc2a9908cf00d33c53fa",
+        "id": 20,
         "product": "Natural Food Items",
         "quantity": 1,
         "price": 202,
@@ -180,7 +180,7 @@
         "image": "https://i.ibb.co/fX0fKGs/natural-food.png"
     },
     {
-        "id": "626edc2a9908cf00d33c53fa",
+        "id": 21,
         "product": "Variety of Tea",
         "quantity": 1,
         "price": 202,

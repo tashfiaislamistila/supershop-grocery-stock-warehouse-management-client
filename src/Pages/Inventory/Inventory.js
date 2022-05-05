@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const Inventory = ({ inventory }) => {
+
     const { product, image, supplier, quantity, price, description } = inventory;
 
     return (
