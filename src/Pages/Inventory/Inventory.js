@@ -12,7 +12,7 @@ const Inventory = ({ inventory }) => {
                     <img style={{ width: "300px", height: "200px", objectFit: "cover" }} src={image} className="card-img-top" alt="..." />
                 </div>
                 <div className="card-body ">
-                    <div className='bg-warning shadow-lg p-2 mb-5 rounded'>
+                    <div className='bg-warning shadow-lg p-2 mx-3 mb-5 rounded'>
                         <h4 className="card-title">{product}</h4>
                     </div>
                     <p className="card-text mb-2"> <small>{description}</small>

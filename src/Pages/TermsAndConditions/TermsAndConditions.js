@@ -3,7 +3,7 @@ import React from 'react';
 const TermsAndConditions = () => {
     return (
         <div>
-            <div className='mt-5 text-center  '>
+            <div id='terms' className='mt-5 text-center  '>
                 <h1>TERMS AND CONDITIONS-</h1>
                 <h1>WAREHOUSE AND STORAGE</h1>
                 <h2>Supershop Grocery Stock</h2>
