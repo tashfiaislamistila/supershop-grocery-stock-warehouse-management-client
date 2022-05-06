@@ -11,7 +11,6 @@ const Inventory = ({ inventory }) => {
     }
     return (
         <div>
-
             <div className="card mt-4 shadow-lg p-3 mb-5 ">
                 <div className='text-center'>
                     <img style={{ width: "300px", height: "200px", objectFit: "cover" }} src={image} className="card-img-top" alt="..." />

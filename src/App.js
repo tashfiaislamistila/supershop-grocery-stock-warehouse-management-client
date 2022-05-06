@@ -7,6 +7,8 @@ import Home from './Pages/Home/Home/Home';
 import Inventories from './Pages/Home/Inventories/Inventories';
 import Inventory from './Pages/Inventory/Inventory';
 import InventoryDetail from './Pages/InventoryDetail/InventoryDetail';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -20,6 +22,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventory/:inventoryId' element={<InventoryDetail></InventoryDetail>}></Route>
+        <Route path='/manage' element={<ManageInventories></ManageInventories>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/inventories" element={<Inventories></Inventories>}></Route>
         <Route path="/about" element={<About></About>}></Route>
