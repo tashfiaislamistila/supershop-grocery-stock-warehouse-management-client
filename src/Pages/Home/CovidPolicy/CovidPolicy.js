@@ -1,13 +1,12 @@
 import React from 'react';
 import { MDBRipple } from 'mdb-react-ui-kit';
-import delivaryman from '../../../image/delivaryman.png'
 import working from '../../../image/working.png'
 import worker from '../../../image/worker.png'
 import delivary from '../../../image/delivary.png'
 const CovidPolicy = () => {
     return (
-        <div >
-            <div className='mt-5 text-center  '>
+        <div>
+            <div id='covid' className='mt-5 text-center  '>
                 <h1 className='text-primary '>Working during the COVID-19 pandemic?</h1>
                 <h1 className='text-primary'>Concerned about your health and safety?</h1>
                 <h2 className='text-danger'>CONFRONTING

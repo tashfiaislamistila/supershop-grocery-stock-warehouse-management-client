@@ -19,7 +19,7 @@ const Header = () => {
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
                                 <NavDropdown.Item href="home#terms">Terms and Conditions</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item href="home#covid">Covid Safety</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
