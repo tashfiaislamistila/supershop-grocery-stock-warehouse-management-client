@@ -8,6 +8,7 @@ import Inventories from './Pages/Home/Inventories/Inventories';
 import Inventory from './Pages/Inventory/Inventory';
 import InventoryDetail from './Pages/InventoryDetail/InventoryDetail';
 import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -28,6 +29,7 @@ function App() {
         <Route path="/inventories" element={<Inventories></Inventories>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes >
       <Footer></Footer>
