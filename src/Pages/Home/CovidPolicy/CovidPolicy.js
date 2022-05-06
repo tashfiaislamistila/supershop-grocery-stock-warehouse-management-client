@@ -3,6 +3,7 @@ import { MDBRipple } from 'mdb-react-ui-kit';
 import working from '../../../image/working.png'
 import worker from '../../../image/worker.png'
 import delivary from '../../../image/delivary.png'
+import delivaryman from '../../../image/delivaryman.png'
 const CovidPolicy = () => {
     return (
         <div>
@@ -38,6 +39,14 @@ const CovidPolicy = () => {
                             </a>
                         </MDBRipple>
                     </div>
+                    <div className='mt-4'>
+                        <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow' style={{ maxWidth: '24rem' }}>
+                            <img src={delivaryman} className='w-100' />
+                            <a href='#!'>
+                                <div className='mask' style={{ backgroundColor: 'rgba(57, 192, 237, 0.2)' }}></div>
+                            </a>
+                        </MDBRipple>
+                    </div>
                 </div>
                 <div className='mt-4 border shadow-lg p-3 mb-5 col'>
                     <ul>
@@ -47,12 +56,12 @@ const CovidPolicy = () => {
                             lunch rooms and public areas.For couriers and other truck drivers, suppliers, contractors, customers and other third parties entering the workplace
                             hand sanitizer should be made available and posters advising use must be clearly visible. In fact, workplace entry
                             protocol should be shared with all third parties by email or other means. Hand sanitizer is effective if it contains at
-                            least 60 per cent alcohol. </li>
+                            least 60 per cent alcohol.<a href="https://recalls-rappels.canada.ca/en/alert-recall/recall-certain-hand-sanitizers-may-pose-health-risks-part-1-june-17-2020-march-24-2021"> Health Canada</a>offers a list of recalled hand sanitizing products that should not be used.   </li>
 
                         <h2 className='text-primary mt-4'>SOCIAL (PHYSICAL) DISTANCING </h2>
                         <li> Self-isolation for those with COVID-19 or those experiencing symptoms or those who were exposed to a presumed
                             or confirmed case is essential. In fact, for all workers, contractors, suppliers and many other third parties entering
-                            work premises, employers are required to implement a screening process prior to arrival or when they first enter
+                            work premises, employers are required to implement a <a href="https://covid-19.ontario.ca/screen-covid-19-going-any-public-place"> screening process</a> prior to arrival or when they first enter
                             the workplace. Should anyone fail the screening, they should be denied entry and advised to self-isolate, call their
                             health care provider or Telehealth Ontario (1.866.797.0000) for additional guidance on whether or not they require
                             a COVID-19 test.Employers should also dedicate a location to isolate people who become ill at work until they can leave. </li>
@@ -82,7 +91,7 @@ const CovidPolicy = () => {
                             products being introduced during the pandemic, the need for this training is greater than ever. WHMIS training
                             must result in the workers being able to use information required by WHMIS to protect their health and safety.This training must be developed and implemented in consultation with the joint health and
                             safety committee or health and safety representative.
-                            Properly trained, certified JHSC members are also mandatory and critical to securing safer, healthier workplaces.
+                            Properly trained,  <a href="https://www.whsc.on.ca/Training/Training-Registration/JHSC-Certification-Training"> certified JHSC members</a> are also mandatory and critical to securing safer, healthier workplaces.
                         </li>
                         <h2 className='text-primary mt-4'>Additional advice from
                             Ontario's Ministry of Labour, Training and Skills Development
@@ -115,10 +124,23 @@ const CovidPolicy = () => {
                         <h2 className='text-danger mt-4'> BEST PRACTICES</h2>
                         <li>
                             These are covered in the Workers Health and Safety Centre document above. Other WHSC COVID-19
-                            resources found at www.whsc.on.ca.
+                            resources found at  <a href="https://www.whsc.on.ca/Resources/Publications/COVID-19-Resources"> www.whsc.on.ca.</a>
                             For more information on worker's rights and employer obligations under health and safety law,
                             including the worker right to refuse unsafe work, check out Workers Health and Safety Centre online
-                            worker OHS rights posters or the Frequently Asked Questions section of the WHSC website.
+                            <a href="https://www.whsc.on.ca/Resources/For-Workers/Poster-Resources"> Worker OHS rights posters</a> or the <a href="https://www.whsc.on.ca/FAQ"> Frequently Asked Questions </a> section of the WHSC website.
+                        </li>
+                        <h2 className='text-danger mt-4'>RESOURCES</h2>
+                        <li>
+                            Stay updated with daily government updates on COVID-19:
+                            <li>
+                                <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html?utm_campaign=not-applicable&utm_medium=vanity-url&utm_source=canada-ca_coronavirus"> Goverment of Canada</a>
+                            </li>
+                            <li>
+                                <a href="https://www.whsc.on.ca/Files/Resources/COVID-19-Resources/WHSC_Pandemic_Factory-And-Warehouse-Workers_Mar2021.aspx#:~:text=Time%20for%20frequent%20and%20thorough,shifts%20on%20commonly%20touched%20surfaces"> Goverment of Ontario</a>
+                            </li>
+                            <li>
+                                <a href="https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus"> Public Health Ontario</a>
+                            </li>
                         </li>
                     </ul>
                 </div>
