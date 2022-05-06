@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import useInventories from '../../CustomHooks/useInventories';
 import Inventory from '../../Inventory/Inventory';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
-import TermsAndConditions from '../../TermsAndConditions/TermsAndConditions';
+import TermsAndConditions from '../TermsAndConditions/TermsAndConditions';
 import Banner from '../Banner/Banner';
+import CovidPolicy from '../CovidPolicy/CovidPolicy';
 
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
 
             </div>
             <TermsAndConditions></TermsAndConditions>
+            <CovidPolicy></CovidPolicy>
         </>
     );
 };
