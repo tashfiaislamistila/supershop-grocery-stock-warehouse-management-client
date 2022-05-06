@@ -1,16 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../../../image/logo.png'
 const Header = () => {
     return (
         <header>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top' >
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  >
                 <Container>
-                    <img className='px-3' height={30} src={logo} alt="" />
-                    <Navbar.Brand href="home" className='fw-bold text-warning'>Supershop Grocery Stock
-
+                    <img className='px-4' height={30} src={logo} alt="" />
+                    <Navbar.Brand as={Link} to="/" className='fw-bold text-warning'>Supershop Grocery Stock
                     </Navbar.Brand>
-
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -25,7 +24,7 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
+                            <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link eventKey={2} href="#Login">
                                 Login
                             </Nav.Link>

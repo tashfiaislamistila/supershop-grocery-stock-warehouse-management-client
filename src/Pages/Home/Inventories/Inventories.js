@@ -1,11 +1,13 @@
 import useInventories from '../../CustomHooks/useInventories';
 import Inventory from '../../Inventory/Inventory';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 import './Inventories.css';
 
 const Inventories = () => {
     const [inventories] = useInventories([]);
     return (
         <div>
+            <PageTitle title="All Inventories"></PageTitle>
             <div>
                 <h1 className='mt-5 text-center '>All Inventories Item</h1>
             </div>

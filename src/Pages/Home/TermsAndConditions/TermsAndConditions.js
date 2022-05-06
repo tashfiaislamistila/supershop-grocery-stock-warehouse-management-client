@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const TermsAndConditions = () => {
     return (
+
         <div>
+            {/* <PageTitle title="Terms and Conditions"></PageTitle> */}
             <div id='terms' className='mt-5 text-center  '>
                 <h1>TERMS AND CONDITIONS-</h1>
                 <h1>WAREHOUSE AND STORAGE</h1>
