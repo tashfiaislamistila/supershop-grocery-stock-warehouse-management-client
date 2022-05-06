@@ -8,8 +8,10 @@ const ManageInventories = () => {
 
     return (
         <div>
-            <h1>Manage Inventories {inventories.length}</h1>
-            <table class="table">
+            <div className='text-center mt-5'>
+                <h1>Manage Inventories {inventories.length}</h1>
+            </div>
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">id</th>
