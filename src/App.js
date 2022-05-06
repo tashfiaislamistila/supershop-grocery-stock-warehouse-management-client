@@ -9,6 +9,7 @@ import Inventory from './Pages/Inventory/Inventory';
 import InventoryDetail from './Pages/InventoryDetail/InventoryDetail';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -23,7 +24,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/inventory/:inventoryId' element={<InventoryDetail></InventoryDetail>}></Route>
+        <Route path='/inventory/:inventoryId' element={
+          <RequireAuth>
+            <InventoryDetail></InventoryDetail>
+          </RequireAuth>
+        }></Route>
         <Route path='/manage' element={<ManageInventories></ManageInventories>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/inventories" element={<Inventories></Inventories>}></Route>
