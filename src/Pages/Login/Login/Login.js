@@ -83,7 +83,7 @@ const Login = () => {
                 <p>New to Supershop Grocery Stock?<Link to="/register" className='text-danger pe-auto text-decoration-none ' onClick={navigateToRegisterPage}> Please Register</Link></p>
             </div>
             <div className='mb-4 px-4'>
-                <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}> Reset Password</button></p>
+                <p>Forget Password? <button style={{ border: "none", background: "none" }} className=' text-primary pe-auto text-decoration-none px-2' onClick={resetPassword}> Reset Password</button></p>
             </div>
             <SocialLogin></SocialLogin>
             <ToastContainer />
