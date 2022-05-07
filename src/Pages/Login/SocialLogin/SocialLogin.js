@@ -31,7 +31,8 @@ const SocialLogin = () => {
                     className='btn btn-primary w-50 d-block mx-auto my-2'>
                     <i className="fs-5 fab fa-google"></i>
                 </button>
-                <button className='btn btn-dark w-50 d-block mx-auto my-2'>
+                <button onClick={() => signInWithGithub()}
+                    className='btn btn-dark w-50 d-block mx-auto my-2'>
                     <i className="fs-5  fab fa-github"></i>
                 </button>
 
