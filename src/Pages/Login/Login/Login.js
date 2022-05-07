@@ -10,9 +10,8 @@ const Login = () => {
     const passwordRef = useRef('');
     const navigate = useNavigate('');
     const location = useLocation();
-
     let from = location.state?.from?.pathname || "/";
-
+    let errorElement;
     const [
         signInWithEmailAndPassword,
         user,
@@ -24,6 +23,9 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+    }
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
@@ -34,6 +36,7 @@ const Login = () => {
     const navigateToRegisterPage = event => {
         navigate('/register');
     }
+
     return (
         <div className='container w-50 mx-auto border mt-5 mb-5 shadow-lg rounded'>
             <div className='mt-5 text-center mb-5'>
@@ -61,6 +64,7 @@ const Login = () => {
                     </Button>
                 </div>
             </Form>
+            {errorElement}
             <div className='mb-4 px-4'>
                 <p>New to Supershop Grocery Stock?<Link to="/register" className='text-danger pe-auto text-decoration-none ' onClick={navigateToRegisterPage}> Please Register</Link></p>
             </div>
