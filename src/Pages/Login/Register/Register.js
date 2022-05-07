@@ -31,16 +31,23 @@ const Register = () => {
     }
     return (
         <div className='register-form'>
-            <h2 style={{ textAlign: 'center' }}>Please Register</h2>
-            <form onSubmit={handleRegister}>
-                <input type="text" name="name" id="" placeholder='Your Name' />
+            <div className='container w-50 mx-auto border mt-5 mb-5 shadow-lg rounded'>
+                <div className='mt-5'>
+                    <h2 style={{ textAlign: 'center' }}>Please Register</h2>
+                </div>
 
-                <input type="email" name="email" id="" placeholder='Your Email'
-                    required />
-                <input type="password" name="password" id="" placeholder='Your Password' required />
-                <input type="submit" value="Register" />
-            </form>
-            <p>Already have an account?<Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}> Please Login</Link></p>
+                <div className='mt-5 mb-5'>
+                    <form onSubmit={handleRegister}>
+                        <input type="text" name="name" id="" placeholder='Your Name' />
+                        <input type="email" name="email" id="" placeholder='Your Email'
+                            required />
+                        <input type="password" name="password" id="" placeholder='Your Password' required />
+                        <input type="submit" value="Register" />
+                    </form>
+                    <p>Already have an account?<Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}> Please Login</Link></p>
+                </div>
+
+            </div>
         </div >
     );
 };
