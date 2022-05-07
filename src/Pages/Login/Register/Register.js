@@ -35,7 +35,7 @@ const Register = () => {
     }
     return (
         <div className=' register-form'>
-            <div className='container w-50 mx-auto border mt-5 mb-5 shadow-lg rounded'>
+            <div className='w-75 mx-auto border mt-5 mb-5 shadow-lg rounded'>
                 <div className='mt-5'>
                     <h2 style={{ textAlign: 'center' }}>Please Register</h2>
                 </div>

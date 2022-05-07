@@ -44,7 +44,7 @@ const Login = () => {
         alert('Sent email');
     }
     return (
-        <div className='container w-50 mx-auto border mt-5 mb-5 shadow-lg rounded'>
+        <div className='w-75 mx-auto border mt-5 mb-5 shadow-lg rounded'>
             <div className='mt-5 text-center mb-5'>
                 <h1>Please Login</h1>
             </div>

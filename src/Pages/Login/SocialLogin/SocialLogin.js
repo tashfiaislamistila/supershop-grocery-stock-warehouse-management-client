@@ -1,12 +1,14 @@
 import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     let errorElement;
     if (error || error1) {
@@ -14,7 +16,8 @@ const SocialLogin = () => {
     }
 
     if (user || user1) {
-        navigate('/home');
+        // navigate('/home');
+        navigate(from, { replace: true });
     }
     return (
         <div className='container mb-3 p-2 mx-3'>
