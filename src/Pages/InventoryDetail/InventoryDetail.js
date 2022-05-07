@@ -7,7 +7,7 @@ const InventoryDetail = () => {
     return (
         <div>
             <div className='text-center mt-5'>
-                <h1>Inventory Details:{inventoryId}</h1>
+                <h1>Inventory Details: {inventoryId}</h1>
             </div>
             <div className='d-flex align-item-center justify-content-center mt-5 mb-5 border shadow-lg p-3'>
                 <MDBCard style={{ width: '25rem' }}>
