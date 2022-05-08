@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
+import useInventories from '../CustomHooks/useInventories';
 
 const InventoryDetail = () => {
     const { inventoryId } = useParams();
-    const [inventories, setInventories] = useState({});
+    const [inventories, setInventories] = useInventories([]);
 
     useEffect(() => {
         const url = `http://localhost:5000/grocery/${inventoryId}`;
