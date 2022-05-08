@@ -19,7 +19,7 @@ const ManageInventories = () => {
                         <th scope="col">Product Name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
-                        <th scope="col">Manage</th>
+                        <th className='text-center' scope="col">Manage</th>
                     </tr>
                 </thead>
                 <tbody>
