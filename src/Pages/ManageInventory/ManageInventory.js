@@ -5,7 +5,6 @@ const ManageInventory = ({ inventory }) => {
     return (
         <tr>
             {/* <td>{id}</td> */}
-
             <td><img style={{ width: "70px" }} src={image} alt="" />
             </td>
             <td>{product}</td>
