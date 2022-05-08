@@ -12,16 +12,16 @@ const InventoryDetail = () => {
         let newQuantity = parseInt(quantity) - 1;
         const newInventory = { ...inventory, quantity: newQuantity }
         setInventory(newInventory);
-        const url = `http://localhost:5000/grocery${id}`
-        fetch(url)
+        const url = `http://localhost:5000/grocery/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
+            body: JSON.stringify(newInventory)
         })
             .then(res => res.json())
-            .then(data => setInventory(data));
+            .then(data => console.log(data));
     }
     useEffect(() => {
         const url = `http://localhost:5000/grocery/${inventoryId}`;
