@@ -4,19 +4,35 @@ import auth from '../../firebase.init';
 import useInventories from '../CustomHooks/useInventories';
 import axios from 'axios'
 import { MDBBtn } from 'mdb-react-ui-kit';
+import { signOut } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 const MyItem = () => {
     const [user] = useAuthState(auth)
     const [inventories, setInventories] = useInventories();
-
+    const navigate = useNavigate();
 
     useEffect(() => {
         const getOrders = async () => {
             const email = user.email;
             const url = (`https://tranquil-thicket-46733.herokuapp.com/grocery1?email=${email}`);
-            const { data } = await axios.get(url);
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                });
+                setInventories(data);
+            }
+            catch (error) {
+                console.log(error.message);
+                if (error.response.status === 401 || error.response.status === 403) {
+                    signOut(auth);
+                    navigate('/login');
+                }
+            }
 
-            setInventories(data);
+
         }
         getOrders();
     })
@@ -38,7 +54,7 @@ const MyItem = () => {
     }
     return (
         <div className='w-50 mx-auto my-2'>
-            <h2 className='my-2'>Your Item: {inventories.length}</h2>
+            <h1 className=' text-center mt-5'>Your Item: {inventories.length}</h1>
             {
                 inventories.map(inventory => <div className='my-2' key={inventory._id}>
                     <div className="card mt-4 shadow-lg p-3 mb-5 ">
