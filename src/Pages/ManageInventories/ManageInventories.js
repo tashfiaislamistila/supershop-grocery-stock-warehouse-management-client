@@ -14,7 +14,7 @@ const ManageInventories = () => {
             <table className="table">
                 <thead>
                     <tr>
-                        <th scope="col">id</th>
+                        {/* <th scope="col">id</th> */}
                         <th scope="col">Image</th>
                         <th scope="col">Product Name</th>
                         <th scope="col">Price</th>

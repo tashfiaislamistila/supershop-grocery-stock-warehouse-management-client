@@ -33,6 +33,9 @@ const InventoryDetail = () => {
                         <MDBListGroupItem>Price : ${inventories.price}</MDBListGroupItem>
                         <MDBListGroupItem>Supplier Name : ${inventories.supplier}</MDBListGroupItem>
                     </MDBListGroup>
+                    <div className='px-4 mt-4' >
+                        <MDBBtn className='bg-danger' href='#'>Daliver</MDBBtn>
+                    </div>
                     <MDBCardBody>
                         <div>
                             <div className='px-2'>
@@ -45,14 +48,13 @@ const InventoryDetail = () => {
                                 </div>
                             </div>
                         </div>
+
                     </MDBCardBody>
-                    <div className='px-4 mt-4 mb-4 d-flex justify-content-between'>
+                    <div className='px-4  mb-4'>
                         <div>
-                            <MDBBtn href='#'>Update</MDBBtn>
+                            <MDBBtn href='#'>Update Quantity</MDBBtn>
                         </div>
-                        <div>
-                            <MDBBtn href='#'>Delete</MDBBtn>
-                        </div>
+
                     </div>
 
                 </MDBCard>
