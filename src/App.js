@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import MyItem from './Pages/MyItem/MyItem';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -40,7 +41,7 @@ function App() {
         }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/inventories" element={<Inventories></Inventories>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/item" element={<MyItem></MyItem>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

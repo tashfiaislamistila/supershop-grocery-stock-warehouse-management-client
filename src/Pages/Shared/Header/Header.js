@@ -33,7 +33,7 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="item">My Item</Nav.Link>
                             {
                                 user && <>
                                     <Nav.Link as={Link} to="add">Add Inventory</Nav.Link>

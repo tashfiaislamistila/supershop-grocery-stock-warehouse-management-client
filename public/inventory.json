@@ -1,188 +1,190 @@
 [
     {
-        "id": 1,
         "product": "Organic Vegetables",
         "quantity": 1,
+        "sold": 0,
         "price": 61,
         "supplier": "Austin Randolph",
-        "description": "We produce fresh organic vegetable which is pesticides free, we grow it in our farm.",
+        "description": "We produce fresh organic vegetable which is pesticides free,it in our farm.",
         "image": "https://i.ibb.co/4JzGSV0/vegetable.png"
     },
     {
-        "id": 2,
         "product": "Organic Fruits",
         "quantity": 1,
+        "sold": 0,
         "price": 475,
         "supplier": "James Larson",
-        "description": "We have organic fruit collection which is prohibited substances and pesticides free.",
+        "description": "We have organic fruit collection which is prohibited substances and pesticide",
         "image": "https://i.ibb.co/x5p9phC/fruits.png"
     },
     {
-        "id": 3,
         "product": "Organic Milk",
         "quantity": 1,
+        "sold": 0,
         "price": 321,
         "supplier": "Rosemarie Trevino",
         "description": "We have organic dairy farmers have environmentally friendly practices.",
         "image": "https://i.ibb.co/wJY4t5j/farm-fresh-milk.png"
     },
     {
-        "id": 4,
         "product": "Cookies",
         "quantity": 1,
+        "sold": 0,
         "price": 525,
         "supplier": "Juana Mcneil",
         "description": "Our cookie dough is free from artificial flavors and chocolate chips are made from organic cacao and sugar.",
         "image": "https://i.ibb.co/CKwWCZj/cookies.png"
     },
     {
-        "id": 5,
         "product": "Organic cheese",
         "quantity": 1,
+        "sold": 0,
         "price": 483,
         "supplier": "Bertie Meyers",
         "description": "Organic cheese contains all the goodness from regular cheese, including the high levels of protein and calcium.",
         "image": "https://i.ibb.co/bQJYFGx/cheese.png"
     },
     {
-        "id": 6,
         "product": "Organic berries",
         "quantity": 1,
+        "sold": 0,
         "price": 483,
         "supplier": "Bertie Meyers",
-        "description": "Organic berries are grown following a process that goes far beyond simply managing the use of pesticides!",
+        "description": "Organic berries are grown following a process that goes far beyond imply managing the use of pest",
         "image": "https://i.ibb.co/Pwtdk3g/barries.png"
     },
     {
-        "id": 7,
         "product": "Animal food",
         "quantity": 1,
+        "sold": 0,
         "price": 203,
         "supplier": "Franklin Banks",
-        "description": "We have wide collection of popular brand name animal Food, with nutritional factors and flavours for all dogs.",
+        "description": "We have wide collection of popular brand name animal Fonutritional factors and flavours for all dogs.",
         "image": "https://i.ibb.co/F3vwFSf/animal-food.png"
     },
     {
-        "id": 8,
         "product": "Bakery Items",
         "quantity": 1,
+        "sold": 0,
         "price": 363,
         "supplier": "Alicia Russo",
         "description": "We have tasty and very cute cake in our collection. Our bakery item is nicely decorated and super cheap in price.",
         "image": "https://i.ibb.co/SxG67F8/bakery-item.png"
     },
     {
-        "id": 9,
         "product": "Beef Items",
         "quantity": 1,
+        "sold": 0,
         "price": 599,
         "supplier": "Rice Bender",
         "description": "We have fresh frozen beef pieces which is collected from our own farm. ",
         "image": "https://i.ibb.co/wWKgqmX/beef.png"
     },
     {
-        "id": 10,
         "product": "Bread Items",
         "quantity": 1,
+        "sold": 0,
         "price": 478,
         "supplier": "Geraldine Williams",
         "description": "Our bread item is super soft and fresh, which is come from direct factory.",
         "image": "https://i.ibb.co/nk9XSRG/bread.png"
     },
     {
-        "id": 11,
         "product": "Can Drinks Items",
         "quantity": 1,
+        "sold": 0,
         "price": 116,
         "supplier": "Terra Levine",
         "description": "We have very good quantity of can drinks and energy drinks.We have bulk collection of drinks.",
+        "sold": 0,
         "image": "https://i.ibb.co/9gRj6vQ/can-drinks.png"
     },
     {
-        "id": 12,
         "product": "Chicken Items",
         "quantity": 1,
+        "sold": 0,
         "price": 116,
         "supplier": "Barrera Tate",
         "description": "We have fresh frozen chicken pieces which is collected from our own farm. ",
         "image": "https://i.ibb.co/cL2zTvv/chicken.png"
     },
     {
-        "id": 13,
         "product": "Chips & Snacks Items",
         "quantity": 1,
+        "sold": 0,
         "price": 202,
         "supplier": "Henson Mcmillan",
         "description": "We have good quantity of snacks item.",
+        "sold": 0,
         "image": "https://i.ibb.co/tPRbZTD/chips-and-snacks.png"
     },
     {
-        "id": 14,
         "product": "Coffee Items",
         "quantity": 1,
+        "sold": 0,
         "price": 203,
         "supplier": "Franklin Banks",
         "description": "We have different brand coffee bean. ",
         "image": "https://i.ibb.co/xL51Jzm/coffee.png"
     },
     {
-        "id": 15,
         "product": "Cornflakes Items",
         "quantity": 1,
+        "sold": 0,
         "price": 363,
         "supplier": "Alicia Russo",
         "description": "We have cornflakes collection.",
         "image": "https://i.ibb.co/GVtFrtm/cornflex.png"
     },
     {
-        "id": 16,
         "product": "Eggs",
         "quantity": 1,
+        "sold": 0,
         "price": 599,
         "supplier": "Rice Bender",
         "description": "We have farm fresh organic eggs.",
         "image": "https://i.ibb.co/SvNy034/eggs.png"
     },
     {
-        "id": 17,
         "product": "Fish Items",
         "quantity": 1,
+        "sold": 0,
         "price": 478,
         "supplier": "Geraldine Williams",
         "description": "We have fresh frozen fish.",
         "image": "https://i.ibb.co/JnQm7x0/fish.png"
     },
     {
-        "id": 18,
         "product": "Jar Food Items",
         "quantity": 1,
+        "sold": 0,
         "price": 116,
         "supplier": "Terra Levine",
         "description": "We have so many collection of jar food.",
         "image": "https://i.ibb.co/86f3TXM/foodinjar.png"
     },
     {
-        "id": 19,
         "product": "Juice Items",
         "quantity": 1,
+        "sold": 0,
         "price": 303,
         "supplier": "Barrera Tate",
         "description": "We have fresh juice items.",
         "image": "https://i.ibb.co/26JD39z/juice.png"
     },
     {
-        "id": 20,
         "product": "Natural Food Items",
         "quantity": 1,
+        "sold": 0,
         "price": 202,
         "supplier": "Henson Mcmillan",
         "description": "We have nuts and natural food collections. ",
         "image": "https://i.ibb.co/fX0fKGs/natural-food.png"
     },
     {
-        "id": 21,
         "product": "Variety of Tea",
         "quantity": 1,
+        "sold": 0,
         "price": 202,
         "supplier": "Henson Mcmillan",
         "description": "We have so many tea collections.",

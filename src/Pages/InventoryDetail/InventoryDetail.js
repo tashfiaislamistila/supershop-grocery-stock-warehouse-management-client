@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 const InventoryDetail = () => {
     const { inventoryId } = useParams();
     const [inventory, setInventory] = useState({});
-    const { quantity, _id } = inventory;
+    const { quantity, _id, sold } = inventory;
     const { register, handleSubmit } = useForm();
 
 
@@ -21,7 +21,8 @@ const InventoryDetail = () => {
     const handleDelivered = id => {
         if (inventory.quantity > 0) {
             let newQuantity = parseInt(quantity) - 1;
-            const newInventory = { ...inventory, quantity: newQuantity }
+            let newSold = parseInt(sold) + 1;
+            const newInventory = { ...inventory, sold: newSold, quantity: newQuantity }
             setInventory(newInventory);
             const url = `http://localhost:5000/grocery/${id}`
             fetch(url, {
@@ -71,6 +72,10 @@ const InventoryDetail = () => {
                     </MDBCardBody>
                     <MDBListGroup flush>
                         <MDBListGroupItem>Quantity : {inventory.quantity}</MDBListGroupItem>
+                        {
+                            inventory.quantity < 1 ? <MDBListGroupItem>Sold Out</MDBListGroupItem> : <MDBListGroupItem>Sold : {inventory.sold}</MDBListGroupItem>
+                        }
+
                         <MDBListGroupItem>Price : ${inventory.price}</MDBListGroupItem>
                         <MDBListGroupItem>Supplier Name : ${inventory.supplier}</MDBListGroupItem>
                     </MDBListGroup>

@@ -1,10 +1,9 @@
 import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
-import PageTitle from '../Shared/PageTitle/PageTitle';
 import { useNavigate } from 'react-router-dom';
 
 const Inventory = ({ inventory }) => {
-    const { _id, product, image, supplier, quantity, price, description } = inventory;
+    const { _id, product, image, supplier, quantity, sold, price, description } = inventory;
     const navigate = useNavigate();
     const navigateToInventoryDetail = id => {
         navigate(`/inventory/${id}`);
@@ -24,6 +23,7 @@ const Inventory = ({ inventory }) => {
                     <h5 className="card-text mb-2">Price: ${price}</h5>
                     <p className="card-text mb-2">Supplier name: {supplier}</p>
                     <h5 className="card-text">Quantity: {quantity}</h5>
+                    <h5 className="card-text">Sold: {sold}</h5>
                     <div className='mb-2 p-2'>
                         <MDBBtn rounded onClick={() => navigateToInventoryDetail(_id)} className='mx-2' color='secondary'>
                             Manage Stock

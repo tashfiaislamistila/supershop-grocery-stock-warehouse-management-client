@@ -28,23 +28,24 @@ const ManageInventories = () => {
             <table className="table">
                 <thead>
                     <tr>
-                        {/* <th scope="col">id</th> */}
                         <th scope="col">Image</th>
                         <th scope="col">Product Name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
-                        <th className='text-center' scope="col">Manage</th>
+                        <th scope="col">Sold</th>
+                        <th scope="col">Manage</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        inventories.map(inventory => <tr>
+                        inventories.map(inventory => <tr key={inventory._id}>
                             <td><img style={{ width: "70px" }} src={inventory.image} alt="" />
                             </td>
                             <td>{inventory.product}</td>
                             <td>$ {inventory.price}</td>
                             <td>{inventory.quantity}</td>
-                            <td>{<MDBBtn>Update</MDBBtn>}</td>
+                            <td>{inventory.sold}</td>
+                            {/* <td>{<MDBBtn>Update</MDBBtn>}</td> */}
                             <td>{<MDBBtn className="bg-danger" onClick={() => handleDelete(inventory._id)}>Delete</MDBBtn>}</td>
 
                         </tr>)
