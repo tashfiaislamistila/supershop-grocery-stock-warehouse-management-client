@@ -13,7 +13,7 @@ const MyItem = () => {
     useEffect(() => {
         const getOrders = async () => {
             const email = user.email;
-            const url = (`http://localhost:5000/grocery1?email=${email}`);
+            const url = (`https://tranquil-thicket-46733.herokuapp.com/grocery1?email=${email}`);
             const { data } = await axios.get(url);
 
             setInventories(data);
@@ -24,7 +24,7 @@ const MyItem = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Confirm Delete");
         if (proceed) {
-            const url = `http://localhost:5000/grocery/${id}`;
+            const url = `https://tranquil-thicket-46733.herokuapp.com/grocery/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

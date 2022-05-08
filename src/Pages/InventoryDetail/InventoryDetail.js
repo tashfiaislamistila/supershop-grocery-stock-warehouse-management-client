@@ -11,7 +11,7 @@ const InventoryDetail = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/grocery/${inventoryId}`;
+        const url = `https://tranquil-thicket-46733.herokuapp.com/grocery/${inventoryId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data));
@@ -24,7 +24,7 @@ const InventoryDetail = () => {
             let newSold = parseInt(sold) + 1;
             const newInventory = { ...inventory, sold: newSold, quantity: newQuantity }
             setInventory(newInventory);
-            const url = `http://localhost:5000/grocery/${id}`
+            const url = `https://tranquil-thicket-46733.herokuapp.com/grocery/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -43,7 +43,7 @@ const InventoryDetail = () => {
         console.log(newQuantity);
         const newInventory = { ...inventory, quantity: newQuantity }
         setInventory(newInventory);
-        const url = `http://localhost:5000/grocery/${_id}`
+        const url = `https://tranquil-thicket-46733.herokuapp.com/grocery/${_id}`
         fetch(url, {
             method: 'PUT',
             headers: {

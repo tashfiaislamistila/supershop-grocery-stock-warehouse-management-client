@@ -2,12 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Live site link
 
-In the project directory, you can run:
+https://warehouse-management-sys-d4e13.web.app/
 
-### `npm start`
-
+## Site description
+* This is my warehouse management project 
+* 6 data show in home page.Rest of data you can show it in all inventories route.
+* If you are a new user then you should register here, after doing registration you should so home page.
+* Once you register you can login and add your inventory,show your item and list of all inventories.
+* If you forget your password then you get a verification mail.
+* all data fetch from server site.
+* you can delete data from list item.
+* update inventory quantity number.
+* decrease quantity by deliver button.
+* Once quantity is 0 then sold will display in list.
+### Technology use
+* React hook
+* Google firebase authentication
+* bootstrap
+* React bootstrap
+* JWT
+* Mongodb
+* axios
+* JSX
+* React router
+* React form
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

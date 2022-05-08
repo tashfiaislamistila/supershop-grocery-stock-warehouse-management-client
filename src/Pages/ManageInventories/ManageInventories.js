@@ -8,7 +8,7 @@ const ManageInventories = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Confirm Delete");
         if (proceed) {
-            const url = `http://localhost:5000/grocery/${id}`;
+            const url = `https://tranquil-thicket-46733.herokuapp.com/grocery/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -25,7 +25,7 @@ const ManageInventories = () => {
             <div className='text-center mt-5'>
                 <h1>Manage Inventories {inventories.length}</h1>
             </div>
-            <table className="table">
+            <table style={{ overflow: "scroll" }} className="table">
                 <thead>
                     <tr>
                         <th scope="col">Image</th>
