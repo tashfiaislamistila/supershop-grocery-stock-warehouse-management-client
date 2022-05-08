@@ -5,37 +5,53 @@ import useInventories from '../CustomHooks/useInventories';
 
 const InventoryDetail = () => {
     const { inventoryId } = useParams();
-    const [inventories, setInventories] = useInventories([]);
+    const [inventory, setInventory] = useState({});
+    const { quantity } = inventory;
 
+    const handleDelivered = id => {
+        let newQuantity = parseInt(quantity) - 1;
+        const newInventory = { ...inventory, quantity: newQuantity }
+        setInventory(newInventory);
+        const url = `http://localhost:5000/grocery${id}`
+        fetch(url)
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+        })
+            .then(res => res.json())
+            .then(data => setInventory(data));
+    }
     useEffect(() => {
         const url = `http://localhost:5000/grocery/${inventoryId}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setInventories(data));
+            .then(data => setInventory(data));
 
-    }, [])
+    }, [inventoryId])
 
     return (
         <div>
             <div className='text-center mt-5'>
-                <h1>Inventory Details: {inventories.product}</h1>
+                <h1>Inventory Details: {inventory.product}</h1>
             </div>
             <div className='d-flex align-item-center justify-content-center mt-5 mb-5 border shadow-lg p-3'>
                 <MDBCard style={{ width: '25rem' }}>
-                    <MDBCardImage position='top' alt='...' src={inventories.image} />
+                    <MDBCardImage position='top' alt='...' src={inventory.image} />
                     <MDBCardBody>
-                        <MDBCardTitle>Name : {inventories.product}</MDBCardTitle>
+                        <MDBCardTitle>Name : {inventory.product}</MDBCardTitle>
                         <MDBCardText>
-                            Description : {inventories.description}
+                            Description : {inventory.description}
                         </MDBCardText>
                     </MDBCardBody>
                     <MDBListGroup flush>
-                        <MDBListGroupItem>Quantity : {inventories.quantity}</MDBListGroupItem>
-                        <MDBListGroupItem>Price : ${inventories.price}</MDBListGroupItem>
-                        <MDBListGroupItem>Supplier Name : ${inventories.supplier}</MDBListGroupItem>
+                        <MDBListGroupItem>Quantity : {inventory.quantity}</MDBListGroupItem>
+                        <MDBListGroupItem>Price : ${inventory.price}</MDBListGroupItem>
+                        <MDBListGroupItem>Supplier Name : ${inventory.supplier}</MDBListGroupItem>
                     </MDBListGroup>
                     <div className='px-4 mt-4' >
-                        <MDBBtn className='bg-danger' href='#'>Daliver</MDBBtn>
+                        <MDBBtn onClick={() => handleDelivered(inventory._id)} className='bg-danger' href='#'>Daliver</MDBBtn>
                     </div>
                     <MDBCardBody>
                         <div>
@@ -49,7 +65,6 @@ const InventoryDetail = () => {
                                 </div>
                             </div>
                         </div>
-
                     </MDBCardBody>
                     <div className='px-4  mb-4'>
                         <div>

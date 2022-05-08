@@ -3,7 +3,6 @@ import './App.css';
 import About from './Pages/About/About';
 import AddInventory from './Pages/AddInventory/AddInventory';
 import Blog from './Pages/Blog/Blog';
-import Banner from './Pages/Home/Banner/Banner';
 import Home from './Pages/Home/Home/Home';
 import Inventories from './Pages/Home/Inventories/Inventories';
 import Inventory from './Pages/Inventory/Inventory';
@@ -12,7 +11,6 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
-import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -21,7 +19,6 @@ function App() {
   return (
     <div className="container">
       <Header></Header>
-      {/* <Banner></Banner> */}
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
