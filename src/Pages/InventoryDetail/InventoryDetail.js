@@ -1,27 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardLink, MDBListGroup, MDBListGroupItem, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
+
 const InventoryDetail = () => {
-    // const [inventories] = useInventories([]);
+    // const { _id, product, image, supplier, quantity, price, description } = inventory;
     const { inventoryId } = useParams();
+    const [inventories, setInventories] = useState({});
+
+    useEffect(() => {
+        const url = `http://localhost:5000/grocery/${inventoryId}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setInventories(data));
+
+    }, [])
+
     return (
         <div>
             <div className='text-center mt-5'>
-                <h1>Inventory Details: {inventoryId}</h1>
+                <h1>Inventory Details: {inventories.product}</h1>
             </div>
             <div className='d-flex align-item-center justify-content-center mt-5 mb-5 border shadow-lg p-3'>
                 <MDBCard style={{ width: '25rem' }}>
-                    <MDBCardImage position='top' alt='...' src='https://mdbootstrap.com/img/new/standard/city/062.webp' />
+                    <MDBCardImage position='top' alt='...' src={inventories.image} />
                     <MDBCardBody>
-                        <MDBCardTitle>Name</MDBCardTitle>
+                        <MDBCardTitle>Name : {inventories.product}</MDBCardTitle>
                         <MDBCardText>
-                            Description
+                            Description : {inventories.description}
                         </MDBCardText>
                     </MDBCardBody>
                     <MDBListGroup flush>
-                        <MDBListGroupItem>Quantity</MDBListGroupItem>
-                        <MDBListGroupItem>Price</MDBListGroupItem>
-                        <MDBListGroupItem>Supplier Name</MDBListGroupItem>
+                        <MDBListGroupItem>Quantity : {inventories.quantity}</MDBListGroupItem>
+                        <MDBListGroupItem>Price : ${inventories.price}</MDBListGroupItem>
+                        <MDBListGroupItem>Supplier Name : ${inventories.supplier}</MDBListGroupItem>
                     </MDBListGroup>
                     <MDBCardBody>
                         <div>
