@@ -1,18 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
-import useInventories from '../CustomHooks/useInventories';
+import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem, MDBBtn } from 'mdb-react-ui-kit';
+import { useForm } from "react-hook-form";
 
 const InventoryDetail = () => {
     const { inventoryId } = useParams();
     const [inventory, setInventory] = useState({});
-    const { quantity } = inventory;
+    const { quantity, _id } = inventory;
+    const { register, handleSubmit } = useForm();
+
+
+    useEffect(() => {
+        const url = `http://localhost:5000/grocery/${inventoryId}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setInventory(data));
+
+    }, [inventoryId])
 
     const handleDelivered = id => {
-        let newQuantity = parseInt(quantity) - 1;
+        if (inventory.quantity > 0) {
+            let newQuantity = parseInt(quantity) - 1;
+            const newInventory = { ...inventory, quantity: newQuantity }
+            setInventory(newInventory);
+            const url = `http://localhost:5000/grocery/${id}`
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(newInventory)
+            })
+                .then(res => res.json())
+                .then(data => console.log(data));
+        }
+    }
+    const onSubmit = data => {
+        const { updateQuantity } = data;
+        const newQuantity = parseInt(quantity) + parseInt(updateQuantity)
+        console.log(newQuantity);
         const newInventory = { ...inventory, quantity: newQuantity }
         setInventory(newInventory);
-        const url = `http://localhost:5000/grocery/${id}`
+        const url = `http://localhost:5000/grocery/${_id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -23,13 +52,6 @@ const InventoryDetail = () => {
             .then(res => res.json())
             .then(data => console.log(data));
     }
-    useEffect(() => {
-        const url = `http://localhost:5000/grocery/${inventoryId}`;
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setInventory(data));
-
-    }, [inventoryId])
 
     return (
         <div>
@@ -50,28 +72,23 @@ const InventoryDetail = () => {
                         <MDBListGroupItem>Price : ${inventory.price}</MDBListGroupItem>
                         <MDBListGroupItem>Supplier Name : ${inventory.supplier}</MDBListGroupItem>
                     </MDBListGroup>
-                    <div className='px-4 mt-4' >
-                        <MDBBtn onClick={() => handleDelivered(inventory._id)} className='bg-danger' href='#'>Daliver</MDBBtn>
+                    <div className='px-4 mt-4 text-center' >
+                        <MDBBtn onClick={() => handleDelivered(inventory._id)} className='bg-danger' href='#'>Deliver</MDBBtn>
                     </div>
                     <MDBCardBody>
                         <div>
                             <div className='px-2'>
                                 <h2>Quantity Update Option</h2>
                             </div>
-                            <div style={{ width: '20rem' }}>
-                                <MDBInput label='Update Quantity' id='formTextExample1' type='text' aria-describedby='textExample1' />
+                            <form className='d-flex flex-column w-50 mx-auto mt-5 mb-5 ' onSubmit={handleSubmit(onSubmit)}>
+                                <input className="mt-1 mb-2 rounded" placeholder="Update Quantity" type="number" {...register("updateQuantity")} />
                                 <div id='textExample1' className='form-text'>
                                     Please set the quantity and click the update button.
                                 </div>
-                            </div>
+                                <input className="mt-3 btn btn-primary mb-2 rounded " type="submit" value="Update Quantity" />
+                            </form>
                         </div>
                     </MDBCardBody>
-                    <div className='px-4  mb-4'>
-                        <div>
-                            <MDBBtn href='#'>Update Quantity</MDBBtn>
-                        </div>
-
-                    </div>
 
                 </MDBCard>
             </div>
