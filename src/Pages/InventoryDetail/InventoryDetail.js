@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBListGroup, MDBListGroupItem, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
 
 const InventoryDetail = () => {
-    // const { _id, product, image, supplier, quantity, price, description } = inventory;
     const { inventoryId } = useParams();
     const [inventories, setInventories] = useState({});
 
