@@ -33,6 +33,7 @@ const InventoryDetail = () => {
             })
                 .then(res => res.json())
                 .then(data => console.log(data));
+            alert("Item delivered")
         }
     }
     const onSubmit = data => {
@@ -51,6 +52,7 @@ const InventoryDetail = () => {
         })
             .then(res => res.json())
             .then(data => console.log(data));
+        alert("Quantity updated")
     }
 
     return (
