@@ -29,7 +29,7 @@ const Header = () => {
                                 <NavDropdown.Item href="home#terms">Terms and Conditions</NavDropdown.Item>
                                 <NavDropdown.Item href="home#covid">Covid Safety</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+
                             </NavDropdown>
                         </Nav>
                         <Nav>

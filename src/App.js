@@ -39,9 +39,14 @@ function App() {
             </ManageInventories>
           </RequireAuth>
         }></Route>
+        <Route path='/item' element={
+          <RequireAuth>
+            <MyItem>
+            </MyItem>
+          </RequireAuth>
+        }></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/inventories" element={<Inventories></Inventories>}></Route>
-        <Route path="/item" element={<MyItem></MyItem>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
